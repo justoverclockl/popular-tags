@@ -12,10 +12,12 @@ export default class MyWidget extends Widget {
 
   oncreate(vnode) {
     super.oncreate(vnode);
+    const showedTags = app.forum.attribute('justoverclock-popular-tags.numberOfTags') || 4
     const url = app.forum.attribute('baseUrl') + '/api/tags'
     getTags(url).then(res => {
-      this.popularTags = res
+      this.popularTags = res.slice(0,showedTags)
       this.loading = false
+      m.redraw()
     })
   }
 
