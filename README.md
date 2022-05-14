@@ -4,6 +4,8 @@
 
 A [Flarum](http://flarum.org) extension. Add popular tags widget to Flarum
 
+![pt](https://user-images.githubusercontent.com/79002016/168423842-02f61db4-739b-4911-8389-a8a18f5a7519.png)
+
 ## Installation
 
 Install with composer:
@@ -16,12 +18,10 @@ composer require justoverclock/popular-tags:"*"
 
 ```sh
 composer update justoverclock/popular-tags:"*"
-php flarum migrate
 php flarum cache:clear
 ```
 
 ## Links
 
 - [Packagist](https://packagist.org/packages/justoverclock/popular-tags)
-- [GitHub](https://github.com/justoverclock/popular-tags)
-- [Discuss](https://discuss.flarum.org/d/PUT_DISCUSS_SLUG_HERE)
+- [GitHub](https://github.com/justoverclockl/popular-tags)
