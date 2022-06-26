@@ -2,13 +2,15 @@ import Widgets from 'flarum/extensions/afrux-forum-widgets-core/common/extend/Wi
 
 import PopularTags from './components/PopularTags';
 
-export default function(app) {
-  (new Widgets).add({
-    key: 'PopularTags',
-    component: PopularTags,
-    isDisabled: false,
-    isUnique: true,
-    placement: 'end',
-    position: 1,
-  }).extend(app, 'justoverclock-popular-tags');
-};
+export default function (app) {
+  new Widgets()
+    .add({
+      key: 'PopularTags',
+      component: PopularTags,
+      isDisabled: false,
+      isUnique: true,
+      placement: 'end',
+      position: 1,
+    })
+    .extend(app, 'justoverclock-popular-tags');
+}
