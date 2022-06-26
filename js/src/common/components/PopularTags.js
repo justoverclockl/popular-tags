@@ -42,7 +42,6 @@ export default class MyWidget extends Widget {
       <div className="popular-tags">
         <ul className="poptag-ul">
           {this.popularTags && this.popularTags.map((tag) => {
-            console.log(tag)
             const baseUrl = app.forum.attribute('baseUrl')
             const discussionCount = app.translator.trans('justoverclock-popular-tags.forum.count') + tag.attributes.discussionCount
             return (
